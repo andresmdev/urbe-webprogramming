@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON</title>
+</head>
+<body>
+  
+  <script>
+    let json = {
+      "name": "Juan",
+      "age": 25,
+      "address": {
+        "street": "Calle 123",
+        "city": "Tokio",
+        "country": "USA",
+        "state": "Zulia",
+        "zip": 12345,
+        "coord": {
+          "lat": 123.456,
+          "lng": 456.789
+        }
+      },
+      "phones": ["123-456", "456-789"],
+      "cars": [
+        {
+          "brand": "Ford",
+          "model": "Mustang",
+          "year": 2020,
+          "color": "Black",
+          "price": 20000,
+          "features": ["ABS", "Airbag", "GPS"]
+        },
+        {
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2020,
+          "color": "Red",
+          "price": 20000,
+          "features": ["ABS", "Airbag", "GPS"]
+        }
+      ]
+    }
+
+    console.log(json);
+
+    console.log(json.name);
+    console.log(json.address.city);
+    console.log(json.address.zip);
+    console.log(json.address.coord.lat, json.address.coord.lng);
+
+    console.log(json.cars);
+    const cars = json.cars;
+
+    for(let c in cars) {
+      console.log(cars[c].brand, cars[c].model, cars[c].year);
+    }
+
+    //editando un valor al json
+    json.address.street = "Calle 456";
+
+    //agregando un valor al json
+    json.address['neighborhood'] = "Barrio 123";
+    
+    //eliminando un valor al json
+    delete json.address.zip;
+    
+    console.log(json);
+  </script>
+
+</body>
+</html>

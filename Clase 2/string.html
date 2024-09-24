@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> String </title>
+</head>
+<body>
+  
+  <script>
+    const txt = "Esto es JS";
+    console.log(txt);
+    
+    console.log(txt.length); // longitud
+    console.log(txt.indexOf("JS")); // posicion de la palabra
+    console.log(txt.slice(5, 7)); // extraer una parte del texto
+    console.log(txt.substring(5, 10)); // extraer una parte del texto
+    console.log(txt.substr(5, 2)); // extraer una parte del texto
+    console.log(txt.replace("JS", "JavaScript")); // reemplazar una palabra
+    console.log(txt.toUpperCase()); // convertir a mayusculas
+    console.log(txt.toLowerCase()); // convertir a minusculas
+    console.log(txt.concat(" ", "es", " ", "genial")); // concatenar
+    console.log(txt.trim()); // eliminar espacios en blanco
+    console.log(txt.charAt(5)); // extraer un caracter
+    console.log(txt.charCodeAt(5)); // extraer el codigo ASCII de un caracter
+    console.log(txt.split(" ")); // convertir un string en un array
+
+    //interpolacion de string
+    const name = "Juan";
+    const age = 25;
+    console.log(`Hola ${name}, tienes ${age} años`);
+
+    //ternario
+    const edad = 5;
+    const value = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+    console.log(value);
+  </script>
+
+</body>
+</html>

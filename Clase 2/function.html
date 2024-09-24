@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Function </title>
+</head>
+<body>
+  
+  <script>
+    function saludar(name) {
+      console.log(`Hola ${name}`);
+    }
+    saludar("Juan");
+
+    function sumar(a, b) {
+      return a + b;
+    }
+    const total = sumar(5, 3)
+    console.log(total);
+
+    const sumar2 = function(a, b) {
+      return a + b;
+    }
+    console.log(sumar2(3, 3));
+
+    // Arrow function
+    const arrow = (a,b) => {
+      return a + b;
+    }
+    console.log(arrow(2, 2));
+
+    // Arrow function 2
+    const arrow2 = (a,b) => a * b;
+    console.log(arrow2(10, 9));
+
+  </script>
+
+</body>
+</html>

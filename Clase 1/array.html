@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Array </title>
+</head>
+<body>
+  
+  <script>
+    let arr = [1, 2, 3.33, 'JS', false, true, [1, 2, 3], null, undefined, "HOla es Js"];
+
+    /*
+    for(let i = 0; i < arr.length; i++){
+      console.log(arr[i]);
+    }
+    */
+
+    console.log("----------");
+    //for in
+    for(let i in arr){
+      console.log(i, arr[i]);
+    }
+
+    //ver un elemento
+    console.log('POS 0', arr[0]);
+
+    //actualizar elementos
+    arr[3] = "Javascript";
+    
+    //agregar elementos
+    arr.push("Nuevo elemento"); //agrega al final
+    arr.unshift("Nuevo elemento 2"); //agrega al inicio
+    
+    //eliminar elementos
+    arr.pop(); //elimina el ultimo
+    arr.shift(); //elimina el primero
+    arr.splice(6, 1); //elimina el elemento en la posicion 6
+    console.log(arr);
+    console.log("-----------------------");
+
+    //foreach
+    arr.forEach(function(element, index){
+      console.log(index, element);
+    });
+
+
+    //filter - map
+    let arr2 = arr.filter(function(element){
+      return typeof element === 'string';
+    });
+    console.log(arr2);
+
+    let arr3 = arr.map(function(element){
+      return element * 2;
+    });
+    console.log(arr3);
+
+
+  </script>
+
+</body>
+</html>
