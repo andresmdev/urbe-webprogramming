@@ -3,38 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repeticion</title>
+  <title> Formulario </title>
+
+  <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
 
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name">
+  <label class="lb" for="name">Name</label>
+  <input  class="input" type="text" name="name" id="name">
   <br><br>
   
-  <label for="id"> ID </label>
-  <input type="text" name="id" id="id">
+  <label class="lb" for="id"> ID </label>
+  <input  class="input" type="text" name="id" id="id">
   <br><br>
 
-  <label for=""> Sex </label>
-  <select>
+  <label class="lb"> Sex </label>
+  <select class="input" id="sex" >
     <option value="">Select</option>
-    <option value="1">Male</option>
-    <option value="2">Female</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
   </select>
   <br><br>
 
-  <label for=""> Address </label>
-  <input type="text" name="address" id="address">
+  <label class="lb" for=""> Address </label>
+  <input  class="input" type="text" name="address" id="address">
   <br><br>
 
-  <button > Add </button>
+  <button id="btn" onclick="add()"> Add </button>
+  <button id="btn-clear" onclick="clearInput()"> Clear </button>
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th> Name </th>
+        <th> ID </th>
+        <th> Sex </th>
+        <th> Address </th>
+        <th> Action </th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+    </tbody>
+  </table>
 
 
-
-
-  <script>
-  
-  </script>
-
+  <script src="./script/index.js"></script>
 </body>
 </html>
