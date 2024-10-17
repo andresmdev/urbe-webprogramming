@@ -1,0 +1,14 @@
+{
+  "name": "clase-5",
+  "version": "1.0.0",
+  "description": "Esto es un ejemplo de las bases de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres-URBE",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
